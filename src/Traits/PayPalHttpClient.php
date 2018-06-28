@@ -81,7 +81,7 @@ trait PayPalHttpClient
      *
      * @return array|\Psr\Http\Message\StreamInterface
      */
-    private function doPayPalRequest($method)
+    public function doPayPalRequest($method)
     {
         // Setup PayPal API Request Payload
         $this->createRequestPayload($method);
