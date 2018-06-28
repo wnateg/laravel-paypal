@@ -41,14 +41,14 @@ trait PayPalRequest
      *
      * @var \Illuminate\Support\Collection
      */
-    protected $post;
+    public $post;
 
     /**
      * PayPal API configuration.
      *
      * @var array
      */
-    private $config;
+    public $config;
 
     /**
      * Item subtotal.
