@@ -263,7 +263,7 @@ trait PayPalRequest
      *
      * @return \Illuminate\Support\Collection
      */
-    protected function setRequestData(array $data = [])
+    public function setRequestData(array $data = [])
     {
         if (($this->post instanceof Collection) && (!$this->post->isEmpty())) {
             unset($this->post);
